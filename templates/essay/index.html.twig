@@ -1,0 +1,412 @@
+{% extends "base.html.twig" %}
+
+{% set title %} jr_print {% endset %}
+
+{% block body %}
+
+<h1><p></p><p>
+  <p></p>
+</p></h1>
+<!--background slide--> 
+
+<style>
+    .carousel-container {
+        position: relative;
+        margin-left: auto;
+        right: 0;
+    }
+
+    #carousel {
+        position: absolute;
+        top: 0;
+        margin-top:120px;
+        left: 0;
+        /*margin-left:320px;*/
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 1240px) {
+        #carousel {
+            /* Nouveau style pour les écrans inférieurs à 1000px */
+            margin-left: 0;
+        }
+    }
+</style>
+        <div class="container-fluid">
+          <div id="carousel" class="carousel-slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+              <div class="carousel-item active list-inline-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px; opacity:80% ;" src="slide/equipe.jpg" alt="">
+                  </div>
+                  <!--
+                  <div class="carousel-item active list-inline-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/bmoi.PNG" alt="">
+                  </div>
+                -->
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/m_trade.PNG" alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/shell.PNG" alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/car.PNG" alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/orange.PNG" alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/BACHE.jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/C+ - CANAL OLYMPIA 30 03 (8).jpg" alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/DSCN2099.JPG" alt="">
+                  </div>
+                  <div class="carousel-item">
+                      <img class="img-fluid" style="width: 1700px; height: 800px;" src="slide/TRANSTANK ANDILAMENA (2).JPG" alt="">
+                  </div>
+
+              </div>
+          </div>
+      </div>
+<!--
+
+
+      <div class="container-fluid">
+    <div id="carousel" class="carousel-slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active list-inline-item" style="width: 1700px; height: 1000px;">
+                <video class="video-fluid" width="100%" controls autoplay  speed="4">
+                    <source src="slide/tena projet.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la vidéo HTML5.
+                </video>
+            </div>
+            <!-- Ajoutez autant de vidéos que nécessaire en répétant le code ci-dessus -->
+        </div>
+      -->
+    </div>
+</div>
+ 
+  <!-- ======= prestation accueil
+  clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 7% 99%, 0% 50%, 13% 0);
+  ======= -->
+
+
+  <main id="main" style=margin-top:800px>
+
+    <!-- ======= A propos de nous ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2 style="font-size: 40px;">Jr_Print </h2>
+          <p style="font-size: 30px;"> 
+            Une entreprise d'impression numérique sur grand format; spécialisée dans la gestion et l'affichage des campagnes publicitaires permetant de se connecter au public dans tout Madagascar .
+          </p>
+        </div>
+<!--
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>Voluptatem dignissimos provident quasi corporis</h3>
+            <img src="images/jr.PNG" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
+            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic" style="margin-top: 300px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    -->
+    </section>
+
+    <!-- ======= Client ======= -->
+    <section id="clients" class="clients" >
+      <style>
+        #clients{
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+      </style>
+      <div class="container" data-aos="zoom-out">
+        <h2 style="  text-align: center;
+        padding-bottom: 60px;">Nos réferences </h2>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="sponsor/20-UMATEC.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/axian.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/canal+.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/UNICEF-Emblem.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/jovena.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/orange.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/shell-3-logo-png-transparent.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/22-JBt.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/R.png" class="img-fluid" alt=""></div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+<br>
+    
+    <section id="clients" class="clients" >
+      <style>
+        #clients{
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+      </style>
+      <div class="container" data-aos="zoom-out">
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="sponsor/3-ct motors.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/2-Dolto.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/1-madecasse.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/4-europ'alu.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/6-Logo+GDS.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/15-LOGO_TECHNOALARME_HD.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/BATPRO.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/8-HYDIS.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="sponsor/19-ucomad.png" class="img-fluid" alt=""></div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Statistique ======= -->
+    <section id="stats-counter" class="stats-counter">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 align-items-center">
+
+          <div class="col-lg-6">
+            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6" >
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p style= " font-size: 25px ; "><strong>Clients satisfaits</strong> Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="stats-item d-flex align-items-center">
+              <span data-purecounter-start="0" data-purecounter-end="400" data-purecounter-duration="1" class="purecounter"></span>
+              <p style= " font-size: 25px ; "><strong>Panneau à louez a Madagascarsss</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="hero" class="hero" style="background: transparent;">
+      <style>
+        .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  width: 310px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+
+.side--front {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.side--back {
+  background-color: #565478;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column; /* Nouvelle ligne pour afficher le bouton en bas */
+  justify-content: flex-end; /* Aligner le bouton en bas */
+  align-items: center; /* Centrer horizontalement le bouton */
+  padding-bottom: 20px; /* Espacement entre le texte et le bouton */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .side--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .side--back {
+  transform: rotateY(0deg);
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title img {
+  width: 80%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.icon-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title img {
+  width: 100%; 
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-discover {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin-top: 10px;
+}
+
+.btn-discover:hover {
+  background-color: #45a049;
+  color: rgb(0, 0, 255);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre au survol */
+}
+
+.btn-discover:active {
+  background-color: #3e8e41;
+  transform: translateY(1px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+      </style>
+     <div class="icon-boxes position-relative">
+      <div class="container position-relative">
+        <div class="row gy-4 mt-5">
+    
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="side side--front">
+                <h4 class="title text-align-start"><img src="images/car.PNG" height="200px" width="310px" alt=""></h4>
+              </div>
+              <div class="side side--back">
+                <i class="text-white fs-2" style="text-decoration: solid; align-items: center; text-align: center;">Habillage des Voitures</i> 
+                <a href="prestation.html" class="btn-discover">Découvrir</a>
+              </div>
+            </div>
+          </div><!--End Icon Box -->
+    
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="side side--front">
+                <h4 class="title text-align-start"><img src="images/bmoi.PNG" height="200px" width="310px" alt=""></h4>
+              </div>
+              <div class="side side--back">
+                <div class="content">
+                  <i class="text-white fs-2" style="text-decoration: solid; align-items: center; text-align: center;">Habillages comptoirs</i>
+                  <a href="prestation.html" class="btn-discover">Découvrir</a>
+                </div>
+              </div>
+            </div>
+          </div><!--End Icon Box -->
+    
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="side side--front">
+                <h4 class="title text-align-start"><img src="images/m_trade.PNG" height="200px" width="310px" alt=""></h4>
+              </div>
+              <div class="side side--back">
+                <i class="text-white fs-2" style="text-decoration: solid; align-items: center; text-align: center;">Habillages vitrines</i>
+                <a href="prestation.html" class="btn-discover">Découvrir</a>
+              </div>
+            </div>
+          </div><!--End Icon Box -->
+    
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="side side--front">
+                <h4 class="title text-align-start"><img src="images/jovena.PNG" height="200px" width="310px" alt=""></h4>
+              </div>
+              <div class="side side--back">
+                <i class="text-white fs-2" style="text-decoration: solid; align-items: center; text-align: center;">Habillages cuves & Transtack</i>
+                <a href="prestation.html" class="btn-discover">Découvrir</a>
+              </div>
+            </div>
+          </div><!--End Icon Box -->
+        </div>
+      </div>
+    </div>
+    
+      <!-- END OF CHANGE -->
+    </section>
+
+    <section id="call-to-action" class="call-to-action">
+      <div class="container text-center" data-aos="zoom-out">
+        <video src="slide/tena projet.mp4" autoplay controls width="1200px" >Your browser does not support the video tag.</video>
+        <h3>Call To Action</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a class="cta-btn" href="contact.html">Nous Contacter</a>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+  </main>
+
+
+{% endblock %}
