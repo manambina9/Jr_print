@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ecommerce{% endblock %}
+
+{% block body %}
+<style>
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-produit {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-produit img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.formulaire {
+    margin-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<header>
+        <h1>Imprimez vos panneaux publicitaires</h1>
+    </header>
+
+    <main>
+        <section class="produits">
+            <h2>Découvrez nos panneaux</h2>
+            <div class="card-produit">
+                <img src="panneau1.jpg" alt="Panneau publicitaire 1">
+                <h3>Panneau Standard</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Commander</a>
+            </div>
+            </section>
+
+        <section class="formulaire">
+            <h2>Demandez un devis</h2>
+            <form action="#">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="type_panneau">Type de panneau:</label>
+                <select id="type_panneau" name="type_panneau" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="standard">Standard</option>
+                    <option value="grand_format">Grand Format</option>
+                    </select>
+
+                <label for="quantite">Quantité:</label>
+                <input type="number" id="quantite" name="quantite" min="1" required>
+
+                <label for="fichier">Fichier à imprimer:</label>
+                <input type="file" id="fichier" name="fichier" required>
+
+                <button type="submit">Envoyer demande</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Impression Panneaux Publicitaires</p>
+    </footer>
+{% endblock %}

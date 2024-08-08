@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<div class="error alert-danger">
+    {{ form_errors(registrationForm) }}
+</div>
+
+    <div class="connect">
+    <div class="containerlogin" id="containerlogin">
+        <div class="form-containerlogin sign-up">
+
+                {{ form_start(registrationForm) }}
+                    <h3> S'inscrire</h3>
+                    <div class="social-icons">
+                        <img src="logo.PNG" alt="logo jr_print" width="100px" height="50px">
+                    </div>
+                    {{ form_row(registrationForm.email) }}
+                    {{ form_row(registrationForm.entreprise) }}
+                    {{ form_row(registrationForm.plainPassword.first, {
+                        label: 'Password'
+                    }) }}
+                    {{ form_row(registrationForm.plainPassword.second, {
+                        label: 'Confirm Password'
+                    }) }}
+                    {{ form_help(registrationForm) }}
+                    {{ form_row(registrationForm.agreeTerms) }}
+
+                    <button type="submit" class="btn">S'inscrire</button>
+                {{ form_end(registrationForm) }}
+            </div>
+
+            <div class="toggle-containerlogin">
+        <div class="toggle">
+            <div class="toggle-panel toggle-right">
+                <h3>Bienvenue sur la page d'inscription</h3>
+                <p> L'inscription est rapide et vous permettra d'accéder à l'ensemble de nos services et fonctionnalités.</p>
+                <button class="hidden" id="register"><a href="{{path('app_login')}}">Se connecter</a></button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}

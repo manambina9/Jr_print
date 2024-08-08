@@ -3,11 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-       
+        <link rel="icon" href="logo.png ">
         {% block stylesheets %}
           <!-- Favicons -->
-            <link href="assets/img/logo.PNG" rel="icon">
             <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -24,7 +22,9 @@
             <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
             <!-- Template Main CSS File -->
-            <link href="main.css" rel="stylesheet">
+            <link href="assets/css/main.css" rel="stylesheet">
+            <link href="assets/css/login.css" rel="stylesheet">
+            
 
         {% endblock %}
 
@@ -48,9 +48,13 @@
         {% block header %}
             {% include "partials/_header.html.twig" %}
         {% endblock %}
+
+
         {% block body %}
             
         {% endblock %}
+
+        
         {% block footer %}
         {% include "partials/_footer.html.twig" %}
         {% endblock %}
