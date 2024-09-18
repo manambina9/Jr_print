@@ -21,11 +21,18 @@ class RegistrationFormType extends AbstractType
     {
         $builder
             ->add('email' ,EmailType::class,[
-                'label' => 'Email'
+                'label' => 'Email',
+                'attr' => [
+                    'placeholder'=> "Votre adresse email",
+                ]
+
             ])
 
             ->add('entreprise', TextType::class, [
-                'label' => 'Entreprise'
+                'label' => 'Entreprise',
+                'attr' => [
+                    'placeholder'=> "Votre entreprise",
+                ]
             ])
 
             ->add('agreeTerms', CheckboxType::class, [
@@ -40,7 +47,9 @@ class RegistrationFormType extends AbstractType
             ->add('plainPassword', RepeatedType::class, [
                 'type' => PasswordType::class,
                 'first_options' => [
-                    'attr' => ['autocomplete' => 'new-password'],
+                    'attr' => ['autocomplete' => 'new-password',
+                    'placeholder'=> "VOtre mot de passe",
+                ],
                     'constraints' => [
                         new NotBlank([
                             'message' => 'Veuillez saisir un mot de passe ',
@@ -54,7 +63,9 @@ class RegistrationFormType extends AbstractType
                     'label' => 'Password',
                 ],
                 'second_options' => [
-                    'attr' => ['autocomplete' => 'new-password'],
+                    'attr' => ['autocomplete' => 'new-password',
+                    'placeholder'=> "Confirmation du mot de passe",
+                ],
                     'label' => 'Confirmer le mot de passe',
                 ],
                 'invalid_message' => 'Les mots de passes doivent ressembler.',
